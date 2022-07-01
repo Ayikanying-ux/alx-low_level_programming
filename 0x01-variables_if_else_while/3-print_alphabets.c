@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-
-/** 
- * main - print alphabet in lower and upper
+/**
+ * main - print alphabet lower and upper
  *
  * Return: zero
  */
 int main(void)
 {
-	int ch;
-	int CH;
+	char ch;
+	char CH;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
