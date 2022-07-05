@@ -2,13 +2,15 @@
 #include "main.h"
 
 /**
- * main - print alphabet in small letters followed by a new line
+ * main - Entry point
+ *
+ * Description: program that prints alphabet in small letters
  */
 void print_alphabet(void)
 {
 	char ch = 'a';
 
-	while (ch <= 'z')
+	for(ch = 'a'; ch <= 'z'; ch++)
 	{
 		_putchar(ch);
 	}
