@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: program that prints alphabet in small letters
+ * Description: prints alphabet in small letters
  */
 void print_alphabet(void)
 {
