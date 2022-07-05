@@ -8,7 +8,7 @@
  *
  * Return: the absolute value of int
  */
-int _abs(int)
+int _abs(int a)
 {
 	if (a >= 0)
 		return (a);
