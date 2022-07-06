@@ -27,8 +27,8 @@ int main(void)
 	}
 	d = (a / 1);
 	e = (a % 1);
-	f = (f / 1);
-	g = (g % 1);
+	f = (b / 1);
+	g = (b % 1);
 	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", f + (g / c));
