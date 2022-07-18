@@ -5,13 +5,13 @@
  *
  * @dest: pointer to copy memory location
  *
- * @src: pointer to copy form
+ * @src: memory area copying from
  *
- * @n: the first n bytes
+ * @n: how many bytes to copy
  *
- * Return: Pointer to memory area dest
+ * Return: Pointer to dest
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
