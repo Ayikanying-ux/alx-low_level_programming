@@ -3,13 +3,13 @@
 /**
  * _memset - fills memory with a constant byte
  *
- * @s: pointer to be filled
+ * @s: memory area pointed to by s
  *
- * @b: constant to be filled in memory
+ * @b: the constant byte b
  *
- * @n: number of times the constant is filed in memory
+ * @n: the first n bytes
  *
- * Return: s
+ * Return: Pointer to memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
