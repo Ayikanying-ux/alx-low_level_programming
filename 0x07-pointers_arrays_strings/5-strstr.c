@@ -11,13 +11,13 @@ char *_strstr(char *haystack, char *needle)
 	int i;
 	char *found[];
 
-	while(*needle)
+	while(*haystack)
 	{
-		for (i = 0 haystack[i]; i++)
+		for (i = 0 needle[i]; i++)
 		{
-			if (*needle == haystack[i])
+			if (*haystack == needle[i])
 			{
-				found = *needle
+				found = *haystack;
 			}
 		}
 		*needle++;
