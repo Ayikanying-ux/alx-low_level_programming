@@ -11,18 +11,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int counter, i;
+	int counter, i flag;
 	
 	counter = 0;
 	while (*s)
 	{
 		for (i = 0; accept[i]; i++)
 		{
+			flag = 0;
 			if (*s == accept[i])
+			{
 				counter++;
-			else if (accept[i + 1] == '\0')
-				return (counter);
+				flag = 1;
+				break;
+			}
 		}
+		if (!flag)
+			break;
 		s++;
 	}
 	return (counter);
