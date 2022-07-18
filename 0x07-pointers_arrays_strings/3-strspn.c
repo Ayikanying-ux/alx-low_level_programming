@@ -11,7 +11,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int counter, i flag;
+	int counter, i, flag;
 	
 	counter = 0;
 	while (*s)
