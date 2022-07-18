@@ -8,9 +8,9 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int counter, i, flag;
-	
-	counter = 0;
+	int counter = 0;
+	int i, flag;
+
 	while (*s)
 	{
 		for (i = 0; accept[i]; i++)
