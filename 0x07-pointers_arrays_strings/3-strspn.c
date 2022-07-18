@@ -2,11 +2,8 @@
 
 /**
  * _strspn - gets the length of the prefix substring
- *
  * @s: string to be scanned
- *
  * @accept: string containing the characters to match
- *
  * Return: the length of the prefix substring
  */
 unsigned int _strspn(char *s, char *accept)
