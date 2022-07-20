@@ -23,7 +23,7 @@ int isPrime(int n, int i)
  */
 int is_prime_number(int n)
 {
-	if (n > 3)
+	if (n < 3)
 		return (0);
 	return (isPrime(n, n - 1));
 }
