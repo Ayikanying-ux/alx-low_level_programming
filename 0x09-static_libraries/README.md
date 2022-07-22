@@ -1,1 +1,1 @@
-# 0x04. C - More functions, more nested loops
+# 0x07. C - Even more pointers, arrays and strings
