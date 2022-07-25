@@ -27,7 +27,7 @@ char *_strdup(char *str)
 {
 	char *copy;
 	char *_copy;
-	
+
 	if (!str)
 		return (NULL);
 	copy = malloc(_str_length(str) * sizeof(char));
@@ -43,4 +43,3 @@ char *_strdup(char *str)
 	*_copy = '\0';
 	return (copy);
 }
-	
