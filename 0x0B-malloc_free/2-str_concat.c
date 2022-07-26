@@ -50,6 +50,6 @@ char *str_concat(char *s1, char *s2)
 		s2++;
 	}
 	*_copy = '\0';
-	return (_copy);
+	return (copy);
 }
 
