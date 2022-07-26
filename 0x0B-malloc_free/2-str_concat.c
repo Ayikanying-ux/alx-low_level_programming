@@ -29,11 +29,11 @@ char *str_concat(char *s1, char *s2)
 	char *copy;
 	char *_copy;
 
-	if (s1 == "")
-		return (NULL);
-	if (s2 == "")
-		return (NULL);
-	copy = malloc(sizeof(char) * (_length(*s1) + _length(*s2)) + 1);
+	if (s1 == NULL)
+		return ("");
+	if (s2 == NULL)
+		return ("");
+	copy = malloc(sizeof(char) * (_length(s1) + _length(s2)) + 1);
 	if (!_copy)
 		return (NULL);
 	_copy = copy;
