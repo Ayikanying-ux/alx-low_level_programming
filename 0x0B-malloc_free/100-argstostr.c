@@ -42,7 +42,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		len = _strlen(av[i]);
-		for (j = 0; j < len; j++; m++)
+		for (j = 0; j < len; j++, m++)
 		{
 			ptr[m] = av[i][j];
 		}
