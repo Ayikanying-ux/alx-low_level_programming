@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *copy;
 	char *_copy;
-	
+
 	if (s1 == "")
 		return (NULL);
 	if (s2 == "")
