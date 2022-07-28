@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 /**
- * _str_len: caculates length of a string
+ * _str_len - caculates length of a string
  * @s: string passed
  * Return: Length of string passed
  */
 int _str_len(char *s)
 {
 	int len = 0;
+
 	while (*s)
 	{
 		len++;
