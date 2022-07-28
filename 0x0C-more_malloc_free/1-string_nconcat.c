@@ -40,12 +40,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  */
 int _str_len(char *s)
 {
-	int length = 0;
+	char *p;
 
 	while (*s)
 	{
-		length++;
 		s++;
 	}
-	return (length);
+	return (s - p);
 }
