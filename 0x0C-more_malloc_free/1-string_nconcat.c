@@ -10,15 +10,15 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	unsigned int i, j, size, len1, len2;
 	char *ptr;
-	unsigned int len1, len2, size, i, j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	len1 = _str_len(s1);
-	len2 = _str_len(s2);
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 	if (n > len2)
 		n = len2;
 	size = len1 + n;
@@ -34,17 +34,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 }
 
 /**
- * _str_len - calculates length of string
- * @s: string passed
+ * _strlen - returns the length of a string
+ * @s: string s
  * Return: length of string
  */
-int _str_len(char *s)
+int _strlen(char *s)
 {
 	char *p = s;
 
 	while (*s)
-	{
 		s++;
-	}
 	return (s - p);
 }
