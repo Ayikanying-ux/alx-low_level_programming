@@ -2,22 +2,6 @@
 #include <stdlib.h>
 
 /**
- * _str_len - caculates length of a string
- * @s: string passed
- * Return: Length of string passed
- */
-int _str_len(char *s)
-{
-	char *p = s;
-
-	while (*s)
-	{
-		s++;
-	}
-	return (s - p);
-}
-
-/**
  * string_nconcat - concatenates two strings
  * @s1: destination string
  * @s2: source string
@@ -47,4 +31,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s2[j];
 	ptr[i] = 0;
 	return (ptr);
+}
+
+/**
+ * _str_len - calculates length of string
+ * @s: string passed
+ * Return: length of string
+ */
+int _str_len(char *s)
+{
+	int length = 0;
+
+	while (*s)
+	{
+		length++;
+		s++;
+	}
+	return (length);
 }
