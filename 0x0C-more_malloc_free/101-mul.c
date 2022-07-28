@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 /**
- * _is_zero determines if any number is zero
+ * _is_zero - determines if any number is zero
  * @argv: argument vector
  *
  * Return: void
@@ -33,7 +33,7 @@ void _is_zero(char *argv[])
 }
 
 /**
- * initialize_array - set memory to zero
+ * _initialize_array - set memory to zero
  * @ar: char array
  * @lar: length of the char array
  *
@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
 			{
 				add = (nout[k] - '0') + addl;
 				if (add > 9)
-					nout[k -1] = (add / 10) + '0';
+					nout[k - 1] = (add / 10) + '0';
 				nout[k] = (add % 10) + '0';
 			}
 			i = ln1 - 1, j--, addl = 0, ca++, k = lnout - (1 + ca);
@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
 		}
 		if (j >= 0)
 		{
-			add = (( argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
+			add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
 			addl = add / 10, nout[k] = (add % 10) + '0';
 		}
 	}
