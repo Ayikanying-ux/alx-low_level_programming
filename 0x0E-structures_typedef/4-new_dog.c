@@ -3,7 +3,7 @@
 /**
  * new_dog - creates a new variable of type struct dog
  * @name: name of the dog
- * @float: age of the dog
+ * @age: age of the dog
  * @owner: owner of the dog
  * Return: A variable of type dog
  */
