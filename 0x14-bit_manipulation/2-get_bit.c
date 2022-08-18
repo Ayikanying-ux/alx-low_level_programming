@@ -1,16 +1,21 @@
-#include "main.h"
+#include"main.h"
+
 /**
- *get_bit-function that returns the value of a bit at a given index
- *@n:number
- *@index: the number of times to be shifted
- *Return: nth bit - bitstatus
+ * get_bit - returns the value of a bit at a given index.
+ * @n: number to check bits in
+ * @index: index at which to check bit
+ *
+ * Return: value of the bit, or -1 if there is an error
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int bitstatus;
+	unsigned long int divisor, check;
 
-	if (index >= (sizeof(unsigned long int) * 8))
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
-	bitstatus = (n >> index) & 1;/*nth bit of n right shift n, index times*/
-	return (bitstatus);
+	divisor = 1 << index;
+	check = n & divisor;
+	if (check == divisor)
+		return (1);
+	return (0);
 }
